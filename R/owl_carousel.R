@@ -1,27 +1,74 @@
-#' <Add Title>
+#' Title
 #'
-#' <Add Description>
+#' Description
 #'
 #' @import htmlwidgets
 #'
 #' @export
-owl_carousel <- function(message, width = NULL, height = NULL, elementId = NULL) {
+owl_carousel <- function(id, ...) {
 
-  # forward options using x
-  x = list(
-    message = message
+  # tag <- htmltools::tags$div(id = id, class = "slider owl-carousel") %>%
+  #   htmltools::tagAppendChildren(...)
+
+  # dep_jquery <- htmlDependency(
+  #   "jquery", "3.5.1", c("href" = "inst/htmlwidgets/jquery/"),
+  #   script = "jquery.min.js"
+  # )
+  # style_css <- htmlDependency(
+  #   "style", "1.0", c("href" = "inst/htmlwidgets/"),
+  #   script = "style.css"
+  # )
+  #
+  # tag <- attachDependencies(
+  #   tag,
+  #   dep_jquery
+  # )
+
+  tag <- htmltools::tags$div(
+    id = id,
+    class = "slider owl-carousel",
+    ...
   )
 
-  # create widget
-  htmlwidgets::createWidget(
-    name = 'owl_carousel',
-    x,
-    width = width,
-    height = height,
-    package = 'shinymisc',
-    elementId = elementId
+  htmltools::tagList(
+    tag,
+    html_dependency_owlcarousel()
   )
+
+  # htmlwidgets::createWidget(
+  #   name = 'owl_carousel',
+  #   tag,
+  #   package = 'shinymisc'
+  # )
+
 }
+
+
+# owl_carousel <- function(message, width = NULL, height = NULL, elementId = NULL) {
+#
+#   x = list(
+#     message = message
+#   )
+#
+#   htmlwidgets::createWidget(
+#     name = 'owl_carousel',
+#     x,
+#     width = width,
+#     height = height,
+#     package = 'shinymisc',
+#     elementId = elementId
+#   )
+# }
+
+
+
+
+
+
+
+
+
+
 
 #' Shiny bindings for owl_carousel
 #'

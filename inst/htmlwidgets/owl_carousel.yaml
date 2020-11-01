@@ -1,4 +1,5 @@
 # (uncomment to add a dependency)
+# owlcarousel depends on jquery so jquery comes first
 dependencies:
  - name: jQuery
    version: 3.5.1

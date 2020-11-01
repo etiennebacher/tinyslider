@@ -2,10 +2,10 @@
 % Please edit documentation in R/owl_carousel.R
 \name{owl_carousel}
 \alias{owl_carousel}
-\title{<Add Title>}
+\title{Title}
 \usage{
-owl_carousel(message, width = NULL, height = NULL, elementId = NULL)
+owl_carousel(id, ...)
 }
 \description{
-<Add Description>
+Description
 }
