@@ -4,7 +4,7 @@
 \alias{owl_carousel}
 \title{Title}
 \usage{
-owl_carousel(id, ...)
+owl_carousel(id, ..., width = "100\%", height = "400px")
 }
 \description{
 Description

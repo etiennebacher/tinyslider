@@ -13,7 +13,14 @@ HTMLWidgets.widget({
       renderValue: function(x) {
 
         // TODO: code to render the widget, e.g.
-        el.innerText = x.message;
+        el.innerHTML = x.message;
+
+        $(".slider").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, //2000ms = 2s;
+          autoplayHoverPause: true,
+        })
 
       },
 

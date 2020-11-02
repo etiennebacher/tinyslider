@@ -5,24 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-owl_carousel <- function(id, ...) {
-
-  # tag <- htmltools::tags$div(id = id, class = "slider owl-carousel") %>%
-  #   htmltools::tagAppendChildren(...)
-
-  # dep_jquery <- htmlDependency(
-  #   "jquery", "3.5.1", c("href" = "inst/htmlwidgets/jquery/"),
-  #   script = "jquery.min.js"
-  # )
-  # style_css <- htmlDependency(
-  #   "style", "1.0", c("href" = "inst/htmlwidgets/"),
-  #   script = "style.css"
-  # )
-  #
-  # tag <- attachDependencies(
-  #   tag,
-  #   dep_jquery
-  # )
+owl_carousel <- function(id, ..., width = "100%", height = "400px") {
 
   tag <- htmltools::tags$div(
     id = id,
@@ -30,17 +13,15 @@ owl_carousel <- function(id, ...) {
     ...
   )
 
-  htmltools::tagList(
+  x <- list(message=as.character(htmltools::tagList(
     tag,
     html_dependency_owlcarousel()
+  )))
+  htmlwidgets::createWidget(
+    name = 'owl_carousel',
+    x,
+    package = 'shinymisc'
   )
-
-  # htmlwidgets::createWidget(
-  #   name = 'owl_carousel',
-  #   tag,
-  #   package = 'shinymisc'
-  # )
-
 }
 
 
