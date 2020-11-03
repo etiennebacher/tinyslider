@@ -2,8 +2,6 @@
 
 export("%>%")
 export(owl_carousel)
-export(owl_carouselOutput)
 export(owl_carousel_item)
-export(renderOwl_carousel)
 import(htmlwidgets)
 importFrom(magrittr,"%>%")
