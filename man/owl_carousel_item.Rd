@@ -5,6 +5,7 @@
 \title{Title}
 \usage{
 owl_carousel_item(
+  id,
   title,
   subtitle,
   content = NULL,

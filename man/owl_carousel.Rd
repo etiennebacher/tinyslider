@@ -2,10 +2,35 @@
 % Please edit documentation in R/owl_carousel.R
 \name{owl_carousel}
 \alias{owl_carousel}
-\title{Title}
+\title{Create an owlCarousel}
 \usage{
-owl_carousel(id, ..., width = "100\%", height = "400px")
+owl_carousel(id, ..., options = list())
+}
+\arguments{
+\item{id}{The id of the carousel, a character vector}
+
+\item{...}{Items created by \code{owl_carousel_item()}}
+
+\item{options}{List of options to customize the behavior of the carousel. See below for the details.}
 }
 \description{
-Description
+\code{owl_carousel} is the function that embeds the cards created by \code{owl_carousel_item()}. This is where you specify the behavior of the carousel through several options.
+}
+\details{
+Available options:
+\itemize{
+\item TRUE/FALSE options:
+\itemize{
+\item \code{loop}: carousel slides infinitely
+\item \code{autoplay}: carousel slides automatically
+\item \code{center}: the first item is at the center
+\item \code{rewind}: go backwards when the boundary has reached
+\item \code{autoplayHoverPause}: stop automatic sliding when hovering a card
+\item 
+}
+\item numeric options:
+\itemize{
+\item \code{autoplayTimeout}: time (in milliseconds) before sliding (when autoplay is true)
+}
+}
 }
