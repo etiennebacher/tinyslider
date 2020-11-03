@@ -12,7 +12,10 @@ owl_carousel_item <- function(id, title, subtitle, content = NULL, button_text =
 
   ### button
   if (!is.null(button_text))
-    button <- shiny::tags$div(class = "btn", value = button_text)
+    button <- shiny::tags$div(
+      class = "btn",
+      tags$button(button_text)
+    )
   else
     button <- NULL
 
