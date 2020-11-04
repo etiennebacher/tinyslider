@@ -10,7 +10,6 @@ owl_carousel_item(
   subtitle,
   content = NULL,
   button_text = NULL,
-  width = "300px",
   image = NULL
 )
 }

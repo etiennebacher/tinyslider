@@ -7,7 +7,7 @@
 #' @param width Width, in the format "300px" (default value)
 #'
 #' @export
-owl_carousel_item <- function(id, title, subtitle, content = NULL, button_text = NULL, width = "300px", image = NULL) {
+owl_carousel_item <- function(id, title, subtitle, content = NULL, button_text = NULL, image = NULL) {
 
 
   ### button
@@ -32,7 +32,7 @@ owl_carousel_item <- function(id, title, subtitle, content = NULL, button_text =
   shiny::tags$div(
     id = id,
     class = "card",
-    style = paste0("width: ", width),
+    # style = paste0("width: ", width),
     img,
     shiny::tags$div(
       class = "content",
