@@ -1,0 +1,15 @@
+# (uncomment to add a dependency)
+# owlcarousel depends on jquery so jquery comes first
+dependencies:
+ - name: jQuery
+   version: 3.5.1
+   src: htmlwidgets/jquery
+   script: jquery.min.js
+ - name: OwlCarousel2
+   version: 2.3.4
+   src: htmlwidgets/owl_carousel
+   script:
+     - owl.carousel.min.js
+   stylesheet:
+     - owl.carousel.min.css
+     - style.css
