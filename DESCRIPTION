@@ -1,15 +1,13 @@
 Package: shinymisc
-Title: What the Package Does (One Line, Title Case)
+Title: Provide Widgets for R Shiny
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Etienne",
+           family = "Bacher",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "etienne.bacher@protonmail.com")
+Description: It provides for now only one widget in order to enhance Shiny apps.
+License: `use_mit_license()`
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
