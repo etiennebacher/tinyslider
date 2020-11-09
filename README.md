@@ -8,7 +8,7 @@
 
 You can install this package with:
 
-```
+```r
 # install.packages("devtools")
 devtools::install_github("etiennebacher/shinymisc")
 ```
@@ -23,7 +23,7 @@ There are two main functions to create a carousel:
 
 Here's a small demo:
 
-```
+```r
 library(shiny)
 library(shinymisc)
 
