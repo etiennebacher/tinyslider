@@ -1,11 +1,10 @@
-html_dependency_owlcarousel <- function() {
-  htmltools::htmlDependency(
-    name = "owl.carousel",
-    version = "2.3.4",
-    package = "shinymisc",
-    src = "htmlwidgets/owl_carousel",
-    script = c("owl.carousel.min.js", "owl.carousel.js"),
-    stylesheet = c("owl.carousel.min.css", "style.css"),
-    all_files = FALSE
-  )
-}
+# html_dependency_tinyslider <- function() {
+#   htmltools::htmlDependency(
+#     name = "tinyslider",
+#     version = "2.9.3",
+#     package = "shinymisc",
+#     src = "htmlwidgets/tinyslider",
+#     script = "tinyslider.js",
+#     stylesheet = c("tinyslider.min.css", "custom.css")
+#   )
+# }

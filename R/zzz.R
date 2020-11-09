@@ -1,6 +1,6 @@
 .onLoad <- function(libname, pkgname) {
   shiny::addResourcePath(
-    "owlcarousel-assets",
-    system.file("inst", package = "shinymisc")
+    "tinyslider-assets",
+    system.file("htmlwidgets/tinyslider", package = "shinymisc")
   )
 }

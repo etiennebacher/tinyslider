@@ -1,0 +1,9 @@
+# (uncomment to add a dependency)
+dependencies:
+ - name: tinyslider
+   version: 2.9.3
+   src: htmlwidgets/tinyslider
+   script: tinyslider.js
+   stylesheet:
+     - tinyslider.min.css
+     - custom.css

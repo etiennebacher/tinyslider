@@ -1,0 +1,3 @@
+The style of navigations dots of tinyslider could not be easily modified because there was no class to specifically select those buttons. I manually modified tinyslider.js to change this. The changes are not incorporated yet in tinyslider.
+
+See https://github.com/ganlanyuan/tiny-slider/pull/644 for more details
