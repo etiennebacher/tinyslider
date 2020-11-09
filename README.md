@@ -28,9 +28,6 @@ library(shiny)
 library(shinymisc)
 
 ui <- fluidPage(
-  column(6,
-    selectInput("test", "test", NULL)),
-  column(6,
     tinyslider(
       id = "test",
       tinyslider_item(
@@ -52,13 +49,10 @@ ui <- fluidPage(
         loop = TRUE,
         autoplay = TRUE
       ))
-    )
   )
-server <- function(input, output, session) {
-}
+server <- function(input, output, session) {}
 
-shinyApp(ui, server, options = list(launch.browser = TRUE))
-
+shinyApp(ui, server)
 ```
 
 Keep in mind that this is a very new package, and that I'm beginner in package development, especially Shiny widgets. All contributions are welcome!
