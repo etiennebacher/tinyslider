@@ -23,15 +23,17 @@ html,body{
   flex: 1;
   margin: 0 10px;
   background: #fff;
+  width: 35%;
+  margin: auto
 }
-.card .img{
-  height: 200px;
-  width: 100%;
+
+.tinyslider {
+  height: 100% !important;
 }
-.card .img img{
+
+img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 .card .content{
   padding: 10px 20px;
