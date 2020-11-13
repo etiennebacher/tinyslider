@@ -50,8 +50,7 @@ tinyslider(
         autoplay = TRUE
       )
     )
-  })
-  ```
+```
 
 ### In Shiny
 
