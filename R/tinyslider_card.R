@@ -8,7 +8,7 @@
 #' @param image An image to place on top of the card.
 #'
 #' @export
-tinyslider_item <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
+tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
 
 
   ### button

@@ -1,13 +1,13 @@
 #' Create a carousel with tinyslider
 #'
 #' @param id Id of the carousel
-#' @param ... Items created with `tinyslider_item`
+#' @param ... Items created with `tinyslider_card`
 #' @param options List of options for the carousel
 #'
 #' @import htmlwidgets
 #'
 #' @export
-tinyslider <- function(id, ..., options = list()) {
+tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
 
 
   # # css and js
@@ -99,6 +99,8 @@ tinyslider <- function(id, ..., options = list()) {
     htmlwidgets::createWidget(
       name = 'tinyslider',
       x,
+      width = width,
+      height = height,
       package = 'shinymisc'
     )
 }
