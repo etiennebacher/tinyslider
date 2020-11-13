@@ -4,10 +4,10 @@
 
 `shinymisc` is an R package that ultimately will contain several widgets for R Shiny. For now, it only contains functions to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
 
-+ [Installation](#installation)
-+ [tiny-slider](#tiny-slider)
-++ [Standalone widget](#standalone-widget)
-++ [In Shiny](#in-shiny)
+* [Installation](#installation)
+* [tiny-slider](#tiny-slider)
+    * [Standalone widget](#standalone-widget)
+    * [In Shiny](#in-shiny)
 + [Code of Conduct](#code-of-conduct)
 
 ## Installation 
