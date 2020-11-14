@@ -1,3 +1,5 @@
+/* Most of the CSS comes from https://www.codingnepalweb.com/2020/06/owl-carousel-cards-slider-in-html-css-jquery.html */
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -19,6 +21,20 @@ html,body{
   display: flex;
 }
 */
+
+.card-column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.card-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .card{
   flex: 1;
   margin: 0 10px;
