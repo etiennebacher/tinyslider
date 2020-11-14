@@ -25,7 +25,7 @@ devtools::install_github("etiennebacher/shinymisc")
 
 There are two main functions to create a carousel:
 * `tinyslider_card()` allows to create a card, that can have an image, a title and subtitle, some text, and a button.
-* `tinyslider()` is used to embed the items created. This is also where you can specify [options](https://github.com/ganlanyuan/tiny-slider#options) provided by tiny-slider.
+* `tinyslider()` is used to embed the cards created. This is also where you can specify [options](https://github.com/ganlanyuan/tiny-slider#options) provided by tiny-slider.
 
 ```r
 tinyslider(
