@@ -16,18 +16,6 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
         list(...)
     )
 
-    # keep TRUE and FALSE when call the functions to avoid confusion
-    # need to transform these for JS
-    options <- lapply(options, function(x) {
-      if (is.logical(x)) {
-        y <- as.numeric(x)
-        z <- ifelse(y == 0, 'false', 'true')
-        return(z)
-      } else {
-        x
-      }
-    })
-
     options[['container']] <-  '.my-slider'
 
     x <- list(
