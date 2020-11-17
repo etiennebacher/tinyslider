@@ -1,12 +1,10 @@
 /* Most of the CSS comes from https://www.codingnepalweb.com/2020/06/owl-carousel-cards-slider-in-html-css-jquery.html */
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 html,body{
   display: grid;
