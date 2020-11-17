@@ -87,13 +87,13 @@ tinyslider_card_2 <- function(id, title = NULL, subtitle = NULL, content = NULL,
     shiny::tags$div(
       id = id,
       class = 'card',
-      tags$div(
+      shiny::tags$div(
         class = "card-row",
-        tags$div(
+        shiny::tags$div(
           class = "card-column",
           pic
         ),
-        tags$div(
+        shiny::tags$div(
           class = "card-column",
           shiny::tags$div(
             class = 'content',
