@@ -5,7 +5,7 @@
 `tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
 
 * [Installation](#installation)
-* [tiny-slider](#tiny-slider)
+* [tinyslider](#tinyslider)
     * [Standalone widget](#standalone-widget)
     * [In Shiny](#in-shiny)
     * [Include other elements](#other-elements)
@@ -53,7 +53,7 @@ tinyslider(
     )
 ```
 
-### In Shiny
+### In Shiny  
 
 You can use `tinysliderOutput` and `renderTinyslider` in Shiny app. Here's a small demo:
 
