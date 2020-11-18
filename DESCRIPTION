@@ -1,4 +1,4 @@
-Package: shinymisc
+Package: tinyslider
 Title: Provide Widgets for R Shiny
 Version: 0.0.0.9000
 Authors@R: 
@@ -16,3 +16,5 @@ Imports:
     shiny,
     magrittr,
     htmlwidgets
+Suggests: 
+    testthat

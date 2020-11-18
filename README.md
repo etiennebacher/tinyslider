@@ -1,8 +1,8 @@
-# shinymisc
+# tinyslider
 
 [CAREFUL - WORK IN PROGRESS]
 
-`shinymisc` is an R package that ultimately will contain several widgets for R Shiny. For now, it only contains functions to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
+`tinyslider` is an R package that ultimately will contain several widgets for R Shiny. For now, it only contains functions to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
 
 * [Installation](#installation)
 * [tiny-slider](#tiny-slider)
@@ -16,7 +16,7 @@ You can install this package with:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("etiennebacher/shinymisc")
+devtools::install_github("etiennebacher/tinyslider")
 ```
 
 ## tiny-slider
@@ -58,7 +58,7 @@ You can use `tinysliderOutput` and `renderTinyslider` in Shiny app. Here's a sma
 
 ```r
 library(shiny)
-library(shinymisc)
+library(tinyslider)
 
 ui <- fluidPage(
     tinysliderOutput("test")
@@ -100,4 +100,4 @@ Keep in mind that this is a very new package, and that I'm beginner in package d
 
 ## Code of Conduct
   
-Please note that the shinymisc project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the tinyslider project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

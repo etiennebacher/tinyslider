@@ -28,7 +28,7 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
       x,
       width = width,
       height = height,
-      package = 'shinymisc'
+      package = 'tinyslider'
     )
 }
 
@@ -51,7 +51,7 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
 #'
 #' @export
 tinysliderOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'tinyslider', width, height, package = 'shinymisc')
+  htmlwidgets::shinyWidgetOutput(outputId, 'tinyslider', width, height, package = 'tinyslider')
 }
 
 #' @rdname tinyslider-shiny
