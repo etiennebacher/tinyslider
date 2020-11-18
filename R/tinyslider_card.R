@@ -44,8 +44,8 @@ tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, b
       pic,
       shiny::tags$div(
         class = 'content',
-        shiny::tags$div(class = 'title', title),
-        shiny::tags$div(class = 'sub-title', subtitle),
+        shiny::tags$h2(title),
+        shiny::tags$h3(subtitle),
         shiny::tags$p(content),
         button
       )

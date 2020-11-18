@@ -11,10 +11,14 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
 
 
      mytag <- htmltools::tags$div(
-        id = id,
-        class = 'my-slider',
-        list(...)
-    )
+       class = 'tinyslider-container',
+       htmltools::tags$div(
+         id = id,
+         class = 'my-slider',
+         list(...)
+       )
+     )
+
 
     options[['container']] <-  '.my-slider'
 

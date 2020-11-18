@@ -1,151 +1,99 @@
-/* Most of the CSS comes from https://www.codingnepalweb.com/2020/06/owl-carousel-cards-slider-in-html-css-jquery.html */
+/* This code is SCSS but works whereas converting this to CSS creates a strange layout. This mostly comes from: https://gist.github.com/minusdan/d8a5557e59ea632cc2ea6655a57b1a1b */
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-  background: #f2f2f2;
-}
-/*
-.slider{
-  max-width: 1100px;
-  display: flex;
-}
-*/
-
-.card-column {
-  float: left;
-  width: 50%;
+.tinyslider-container {
+    max-width: 1000px;
+    padding: 2rem 3rem;
+    margin: 2rem auto 0 auto;
+    overflow: hidden;
+    position:relative;
+    &:before {
+        content: '.tinyslider-container';
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
-/* Clear floats after the columns */
-.card-row:after {
-  content: "";
-  display: table;
-  clear: both;
+img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
 }
 
-
-.card{
-  flex: 1;
-  margin: 0 10px;
-  background: #fff;
-  width: 35%;
-  margin: auto
+.my-slider {
+    position: relative;
 }
 
-.tinyslider {
-  height: 100% !important;
+.tinyslider-item {
+    padding: 1.5rem .75rem;
+    position: relative;
+    max-width: 500px;
+    &:before {
+        content: '.tinyslider-item';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: blue;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-img{
-  height: 100%;
-  width: 100%;
-}
-.card .content{
-  padding: 10px 20px;
-}
-.card .content .title{
-  font-size: 25px;
-  font-weight: 600;
-}
-.card .content .sub-title{
-  font-size: 20px;
-  font-weight: 600;
-  color: #e74c3c;
-  line-height: 20px;
-}
-.card .content p{
-  text-align: justify;
-  margin: 10px 0;
-}
-.card .content .btn{
-  display: block;
-  text-align: left;
-  margin: 10px 0;
-}
-.card .content .btn button{
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.card .content .btn button:hover{
-  transform: scale(0.9);
+.controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background: #333;
+    width: 100%;
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:focus {
+        outline: none;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
 }
 
-/* Buttons of control for tinyslider */
+.card {
+    text-align: justify;
+    margin: 50px 50px;
+    max-width: 500px;
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: .75rem;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+    &:before {
+        content: '.card';
+        position: absolute;
+        bottom: 0;
+        color: blue;
+    }
+    img {
+        margin-bottom: .25rem;
+    }
 
-[data-controls="prev"] {
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
+    h2 {
+        text-align: center;
+        margin: 0 0 .25rem;
+    }
+    h3 {
+        text-align: center;
+        margin: 0 0 .25rem;
+    }
+    p {
+        margin: 0;
+        padding: 0 .5rem;
+    }
 }
-
- [data-controls="next"] {
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
- [data-action="stop"] {
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
- [data-action="start"] {
-  background: #e74c3c;
-  color: #fff;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-button.tns-nav {
-    background: #fff;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-}
-
-button.tns-nav.tns-nav-active {
-    background: #e74c3c;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-}
-
