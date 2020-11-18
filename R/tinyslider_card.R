@@ -10,15 +10,16 @@
 #' @details `tinyslider_card` and `tinyslider_card_2` are very similar. The only difference is in the layout of the card. The latter creates a card with two columns. If `image` is not `NULL`, `tinyslider_card` puts an image at the top of the card, and `tinyslider_card_2` puts an image in the left column.
 #'
 #' @name tinyslider_cards
+#' @importFrom shiny tags
 #' @export
 tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
 
 
   ### button
   if (!is.null(button_text)) {
-    button <- shiny::tags$div(
+    button <- tags$div(
       class = 'btn',
-      shiny::tags$button(button_text)
+      tags$button(button_text)
     )
   } else {
     button <- NULL
@@ -26,27 +27,27 @@ tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, b
 
   ### image
   if (!is.null(image)) {
-    pic <- shiny::tags$div(
+    pic <- tags$div(
       class = 'img',
-      shiny::tags$img(src = image)
+      tags$img(src = image)
     )
   } else {
     pic <- NULL
   }
 
 
-  mytag <- shiny::tags$div(
+  mytag <- tags$div(
     class = 'tinyslider-item',
-    shiny::tags$div(
+    tags$div(
       id = id,
       class = 'card',
       style = if (!is.null(width)) paste0('width: ', width),
       pic,
-      shiny::tags$div(
+      tags$div(
         class = 'content',
-        shiny::tags$h2(title),
-        shiny::tags$h3(subtitle),
-        shiny::tags$p(content),
+        tags$h2(title),
+        tags$h3(subtitle),
+        tags$p(content),
         button
       )
     )
@@ -57,15 +58,16 @@ tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, b
 }
 
 #' @rdname tinyslider_cards
+#' @importFrom shiny tags
 #' @export
 tinyslider_card_2 <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
 
 
   ### button
   if (!is.null(button_text)) {
-    button <- shiny::tags$div(
+    button <- tags$div(
       class = 'btn',
-      shiny::tags$button(button_text)
+      tags$button(button_text)
     )
   } else {
     button <- NULL
@@ -73,33 +75,33 @@ tinyslider_card_2 <- function(id, title = NULL, subtitle = NULL, content = NULL,
 
   ### image
   if (!is.null(image)) {
-    pic <- shiny::tags$div(
+    pic <- tags$div(
       class = 'img',
-      shiny::tags$img(src = image)
+      tags$img(src = image)
     )
   } else {
     pic <- NULL
   }
 
 
-  mytag <- shiny::tags$div(
+  mytag <- tags$div(
     class = 'tinyslider-item',
-    shiny::tags$div(
+    tags$div(
       id = id,
       class = 'card',
-      shiny::tags$div(
+      tags$div(
         class = "card-row",
-        shiny::tags$div(
+        tags$div(
           class = "card-column",
           pic
         ),
-        shiny::tags$div(
+        tags$div(
           class = "card-column",
-          shiny::tags$div(
+          tags$div(
             class = 'content',
-            shiny::tags$div(class = 'title', title),
-            shiny::tags$div(class = 'sub-title', subtitle),
-            shiny::tags$p(content),
+            tags$div(class = 'title', title),
+            tags$div(class = 'sub-title', subtitle),
+            tags$p(content),
             button
           )
         )

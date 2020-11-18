@@ -4,15 +4,16 @@
 #' @param ... Items created with `tinyslider_card`
 #' @param options List of options for the carousel
 #'
-#' @import htmlwidgets
+#' @importFrom htmlwidgets createWidget
+#' @importFrom shiny tags
 #'
 #' @export
 tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
 
 
-    mytag <- htmltools::tags$div(
+    mytag <- tags$div(
       class = "tinyslider-container",
-      htmltools::tags$div(
+      tags$div(
         id = id,
         class = "my-slider",
         list(...)
@@ -26,7 +27,7 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
       opts = options
     )
 
-    htmlwidgets::createWidget(
+    createWidget(
       name = 'tinyslider',
       x,
       width = width,
