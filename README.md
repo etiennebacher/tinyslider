@@ -2,12 +2,13 @@
 
 [CAREFUL - WORK IN PROGRESS]
 
-`tinyslider` is an R package that ultimately will contain several widgets for R Shiny. For now, it only contains functions to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
+`tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
 
 * [Installation](#installation)
 * [tiny-slider](#tiny-slider)
     * [Standalone widget](#standalone-widget)
     * [In Shiny](#in-shiny)
+    * [Include other elements](#other-elements)
 + [Code of Conduct](#code-of-conduct)
 
 ## Installation 
@@ -94,6 +95,14 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+```
+
+### Include other elements
+
+You are not obliged to use the cards created with `tinyslider_card()`. You can include other elements, such as plots that you have created:
+
+```r
+TODO
 ```
 
 Keep in mind that this is a very new package, and that I'm beginner in package development, especially Shiny widgets. All contributions are welcome!
