@@ -4,14 +4,20 @@
 \alias{tinyslider}
 \title{Create a carousel with tinyslider}
 \usage{
-tinyslider(id, ..., options = list(), width = NULL, height = NULL)
+tinyslider(
+  ...,
+  options = list(),
+  width = NULL,
+  height = NULL,
+  elementId = NULL
+)
 }
 \arguments{
-\item{id}{Id of the carousel}
-
 \item{...}{Items created with \code{tinyslider_card}}
 
 \item{options}{List of options for the carousel}
+
+\item{id}{Id of the carousel}
 }
 \description{
 Create a carousel with tinyslider

@@ -12,7 +12,7 @@
 #' @name tinyslider_cards
 #' @importFrom shiny tags
 #' @export
-tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
+tinyslider_card <- function(title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
 
 
   ### button
@@ -39,7 +39,6 @@ tinyslider_card <- function(id, title = NULL, subtitle = NULL, content = NULL, b
   mytag <- tags$div(
     class = 'tinyslider-item',
     tags$div(
-      id = id,
       class = 'card',
       style = if (!is.null(width)) paste0('width: ', width),
       pic,

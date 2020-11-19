@@ -7,7 +7,6 @@
 \title{Create cards for the tinyslider carousel}
 \usage{
 tinyslider_card(
-  id,
   title = NULL,
   subtitle = NULL,
   content = NULL,
@@ -27,8 +26,6 @@ tinyslider_card_2(
 )
 }
 \arguments{
-\item{id}{Id of the card}
-
 \item{title}{Title of the card}
 
 \item{subtitle}{Subtitle of the card}
@@ -38,6 +35,8 @@ tinyslider_card_2(
 \item{button_text}{Display some text inside a button placed at the bottom of the card. If \code{NULL}, the button is not created.}
 
 \item{image}{An image to place on top of the card.}
+
+\item{id}{Id of the card}
 }
 \description{
 Create cards for the tinyslider carousel

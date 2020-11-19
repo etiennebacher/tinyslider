@@ -59,13 +59,12 @@
 #' @importFrom shiny tags
 #'
 #' @export
-tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
+tinyslider <- function(..., options = list(), width = NULL, height = NULL, elementId = NULL) {
 
 
     mytag <- tags$div(
       class = "tinyslider-container",
       tags$div(
-        id = id,
         class = "my-slider",
         list(...)
       )
@@ -83,7 +82,8 @@ tinyslider <- function(id, ..., options = list(), width = NULL, height = NULL) {
       x,
       width = width,
       height = height,
-      package = 'tinyslider'
+      package = 'tinyslider',
+      elementId = elementId
     )
 }
 
