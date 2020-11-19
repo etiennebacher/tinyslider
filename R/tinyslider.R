@@ -61,12 +61,42 @@
 #' @export
 tinyslider <- function(..., options = list(), width = NULL, height = NULL, elementId = NULL) {
 
+    items <- list(...)
+
+    # need to separate the plots from the regular items because
+    # plots will be embedded in tags$img() but not the other items
+
+    # create a subset with the plot encoded as images
+    # i.e the items that start with "data:image/png"
+    encoded_plots <- lapply(items, function(x) {
+      first_letters <- substr(x, 1, 14)
+      if (first_letters == "data:image/png") x else NA
+    })
+    if (unique(is.na(encoded_plots)) != FALSE) {
+      encoded_plots <- encoded_plots[-which(is.na(encoded_plots))]
+    }
+
+    # remove these plots from items, so that we have two groups:
+    # regular_items and encoded_plots
+    items <- lapply(items, function(x) {
+      first_letters <- substr(x, 1, 14)
+      if (first_letters == "data:image/png") NA else x
+    })
+    if (unique(is.na(items)) != FALSE) {
+      regular_items <- items[-which(is.na(items))]
+    } else {
+      regular_items <- items
+    }
+
 
     mytag <- tags$div(
       class = "tinyslider-container",
       tags$div(
         class = "my-slider",
-        list(...)
+        regular_items,
+        lapply(encoded_plots, function(x){
+          tags$img(src = x)
+        })
       )
     )
 
@@ -85,6 +115,7 @@ tinyslider <- function(..., options = list(), width = NULL, height = NULL, eleme
       package = 'tinyslider',
       elementId = elementId
     )
+
 }
 
 
