@@ -72,7 +72,12 @@ tinyslider <- function(..., options = list(), width = NULL, height = NULL, eleme
       first_letters <- substr(x, 1, 14)
       if (first_letters == "data:image/png") x else NA
     })
-    if (unique(is.na(encoded_plots)) != FALSE) {
+
+    # if none of the elements in encoded_plots is TRUE (i.e there are no NA),
+    # then which(is.na(encoded_plots)) gives integer(0) and
+    # encoded_plots[-which(is.na(encoded_plots))] gives an empty list
+    # whereas every element is an encoded plot
+    if (length(which(is.na(encoded_plots))) != 0) {
       encoded_plots <- encoded_plots[-which(is.na(encoded_plots))]
     }
 
@@ -82,7 +87,7 @@ tinyslider <- function(..., options = list(), width = NULL, height = NULL, eleme
       first_letters <- substr(x, 1, 14)
       if (first_letters == "data:image/png") NA else x
     })
-    if (unique(is.na(items)) != FALSE) {
+    if (length(which(is.na(encoded_plots))) != 0) {
       regular_items <- items[-which(is.na(items))]
     } else {
       regular_items <- items
