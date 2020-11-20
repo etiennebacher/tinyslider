@@ -95,7 +95,13 @@ tinyslider <- function(..., options = list(), width = NULL, height = NULL, eleme
         class = "my-slider",
         regular_items,
         lapply(encoded_plots, function(x){
-          tags$img(src = x)
+          tags$div(
+            class = 'tinyslider-item',
+            tags$div(
+              class = 'card',
+              tags$img(src = x)
+            )
+          )
         })
       )
     )
