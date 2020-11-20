@@ -102,7 +102,41 @@ shinyApp(ui, server)
 You are not obliged to use the cards created with `tinyslider_card()`. You can include other elements, such as plots that you have created:
 
 ```r
-TODO
+library(shiny)
+library(tinyslider)
+library(ggplot2)
+
+plot1 <- ggplot(mtcars, aes(drat, mpg)) +
+  geom_point()
+
+plot2 <- ggplot(mtcars, aes(hp, cyl)) +
+  geom_line()
+
+ui <- fluidPage(
+  tinysliderOutput("test")
+)
+server <- function(input, output, session) {
+  
+  output$test <- renderTinyslider({
+    tinyslider(
+      plot_to_card(plot1), 
+      tinyslider_card(
+        "A city now",
+        "Same question",
+        "There is a button below",
+        button_text = "See more",
+        image = "https://c.pxhere.com/photos/75/a5/granada_spain_city_urban_buildings_architecture_houses_homes-1122666.jpg!d"
+      ),
+      plot_to_card(plot2),
+      options = list(
+        loop = TRUE,
+        autoplay = TRUE
+      )
+    )
+  })
+}
+
+shinyApp(ui, server)
 ```
 
 Keep in mind that this is a very new package, and that I'm beginner in package development, especially Shiny widgets. All contributions are welcome!
