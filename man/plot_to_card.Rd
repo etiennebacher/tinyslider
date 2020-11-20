@@ -4,10 +4,10 @@
 \alias{plot_to_card}
 \title{Convert a plot to a card}
 \usage{
-plot_to_card(gg)
+plot_to_card(plot)
 }
 \arguments{
-\item{gg}{the name of a plot (works only for ggplots for now)}
+\item{plot}{the name of a plot (works only for ggplots for now)}
 }
 \description{
 Convert a plot to a card
