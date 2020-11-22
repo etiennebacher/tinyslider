@@ -21,7 +21,7 @@ You can install this package with:
 devtools::install_github("etiennebacher/tinyslider")
 ```
 
-## tiny-slider
+## tinyslider
 
 ### Standalone widget
 
