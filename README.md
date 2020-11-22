@@ -33,14 +33,12 @@ There are two main functions to create a carousel:
 tinyslider(
       id = "test",
       tinyslider_card(
-        id = "id1",
         title = "A beautiful landscape",
         subtitle = "Where is this?",
         content = "A description of this image",
         image = "https://c.pxhere.com/photos/27/7b/scotland_centralscotland_benmore_stobbinnein_crianlarich_scotspine_mountains_landscape-267332.jpg!d"
       ),
       tinyslider_card(
-        "id2",
         "A city now",
         "Same question",
         "There is a button below",
@@ -72,14 +70,12 @@ server <- function(input, output, session) {
     tinyslider(
       id = "test",
       tinyslider_card(
-        id = "id1",
         title = "A beautiful landscape",
         subtitle = "Where is this?",
         content = "A description of this image",
         image = "https://c.pxhere.com/photos/27/7b/scotland_centralscotland_benmore_stobbinnein_crianlarich_scotspine_mountains_landscape-267332.jpg!d"
       ),
       tinyslider_card(
-        "id2",
         "A city now",
         "Same question",
         "There is a button below",
