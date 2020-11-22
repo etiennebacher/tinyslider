@@ -1,99 +1,69 @@
-/* This code is SCSS but works whereas converting this to CSS creates a strange layout. This mostly comes from: https://gist.github.com/minusdan/d8a5557e59ea632cc2ea6655a57b1a1b */
-
-.tinyslider-container {
-    max-width: 1000px;
-    padding: 2rem 3rem;
-    margin: 2rem auto 0 auto;
-    overflow: hidden;
-    position:relative;
-    &:before {
-        content: '.tinyslider-container';
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+.slider-container {
+	 max-width: 1000px;
+	 padding: 2rem 3rem;
+	 margin: 2rem auto 0 auto;
+	 overflow: hidden;
+	 position: relative;
+}
+ .slider-container:before {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+}
+ img {
+	 display: inline-block;
+	 vertical-align: top;
+	 max-width: 100%;
+}
+ .my-slider {
+	 position: relative;
+}
+ .slider-item {
+	 padding: 1.5rem 0.75rem;
+	 position: relative;
+}
+ .slider-item:before {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 color: blue;
+}
+ .slider-item:hover {
+	 cursor: pointer;
 }
 
-img {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 100%;
+.tns-controls {
+    text-align: center
+}
+.tns-nav {
+    text-align: center
 }
 
-.my-slider {
-    position: relative;
+ .card {
+	 text-align: justify;
+	 margin: 0 auto;
+	 max-width: 500px;
+	 color: #333;
+	 background: white;
+	 border-radius: 5px;
+	 padding-bottom: 0.75rem;
+	 font-family: sans-serif;
+	 overflow: hidden;
+	 position: relative;
 }
-
-.tinyslider-item {
-    padding: 1.5rem .75rem;
-    position: relative;
-    max-width: 500px;
-    &:before {
-        content: '.tinyslider-item';
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: blue;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
+ .card:before {
+	 position: absolute;
+	 bottom: 0;
+	 color: blue;
 }
-
-.controls {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    left: 0;
-    background: #333;
-    width: 100%;
-    top: 50%;
-    transform: translatey(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &:focus {
-        outline: none;
-    }
-
-    li:hover {
-        cursor: pointer;
-    }
+ .card img {
+	 margin-bottom: 0.25rem;
 }
-
-.card {
-    text-align: justify;
-    margin: 50px 50px;
-    max-width: 500px;
-    color: #333;
-    background: white;
-    border-radius: 5px;
-    padding-bottom: .75rem;
-    font-family: sans-serif;
-    overflow: hidden;
-    position: relative;
-    &:before {
-        content: '.card';
-        position: absolute;
-        bottom: 0;
-        color: blue;
-    }
-    img {
-        margin-bottom: .25rem;
-    }
-
-    h2 {
-        text-align: center;
-        margin: 0 0 .25rem;
-    }
-    h3 {
-        text-align: center;
-        margin: 0 0 .25rem;
-    }
-    p {
-        margin: 0;
-        padding: 0 .5rem;
-    }
+ .card h1 {
+	 text-align: center;
+	 margin: 0 0 0.25rem;
+}
+ .card p {
+	 margin: 0;
+	 padding: 0 0.5rem;
 }
