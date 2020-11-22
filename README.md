@@ -100,7 +100,7 @@ shinyApp(ui, server)
 
 ### Include other elements
 
-You are not obliged to use the cards created with `tinyslider_card()`. You can include other elements, such as plots that you have created:
+You are not obliged to use the cards created with `tinyslider_card()`. You can include other elements, such as plots that you have created, with the function `plot_to_card()`. This function converts plots in images, which means that it is impossible to have interactive plots, created by `plotly` or `echarts4r` for instance.
 
 ```r
 library(shiny)
