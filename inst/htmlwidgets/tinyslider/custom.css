@@ -39,6 +39,15 @@
     text-align: center
 }
 
+[data-action="stop"] {
+    margin:0 auto;
+    display:block;
+}
+[data-action="start"] {
+    margin:0 auto;
+    display:block;
+}
+
  .card {
 	 text-align: justify;
 	 margin: 0 auto;
