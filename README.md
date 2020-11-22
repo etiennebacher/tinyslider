@@ -2,13 +2,14 @@
 
 [CAREFUL - WORK IN PROGRESS]
 
-`tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider).
+`tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider). It doesn't have any Javascript dependencies so there shouldn't be conflicts with other htmlwidgets.
 
 * [Installation](#installation)
 * [tinyslider](#tinyslider)
     * [Standalone widget](#standalone-widget)
     * [In Shiny](#in-shiny)
     * [Include other elements](#other-elements)
+    * [Options](#options)
 + [Code of Conduct](#code-of-conduct)
 
 ## Installation 
@@ -138,6 +139,65 @@ server <- function(input, output, session) {
 
 shinyApp(ui, server)
 ```
+
+### Options
+
+|                           | **Works**                              |
+|---------------------------|------------------------------------|
+| mode                      | :heavy_check_mark:                                |
+| axis                      | :heavy_check_mark:                                |
+| items                     | :heavy_check_mark:                                |
+| gutter                    | :heavy_check_mark: but reduces width of boxes     |
+| edgePadding               | :heavy_check_mark: but reduces width of boxes     |
+| fixedWidth                | :heavy_multiplication_x: when value too big or too small |
+| autoWidth                 | :heavy_multiplication_x:                                 |
+| viewportMax               |                                    |
+| slideBy                   | :heavy_check_mark:                                |
+| center                    |                                    |
+| controls                  | :heavy_check_mark:                                |
+| controlsPosition          | :heavy_check_mark:                                |
+| controlsText              | :heavy_check_mark:                                |
+| controlsContainer         |                                    |
+| prevButton                |                                    |
+| nextButton                |                                    |
+| nav                       | :heavy_check_mark:                                |
+| navPosition               | :heavy_check_mark:                                |
+| navContainer              |                                    |
+| navAsThumbnails           |                                    |
+| arrowKeys                 | :heavy_check_mark:                                |
+| speed                     | :heavy_check_mark:                                |
+| autoplay                  | :heavy_check_mark:                                |
+| autoplayPosition          | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayTimeout           | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayDirection         | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayText              | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayHoverPause        | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayButton            |                                    |
+| autoplayButtonOutput      | :heavy_check_mark: (needs autoplay to be true)  |
+| autoplayResetOnVisibility |                                    |
+| animateIn                 |                                    |
+| animateOut                |                                    |
+| animateNormal             |                                    |
+| animateDelay              |                                    |
+| loop                      | :heavy_check_mark:                                |
+| rewind                    | :heavy_multiplication_x:                                 |
+| autoHeight                | :heavy_check_mark:                                |
+| responsive                |                                    |
+| lazyload                  |                                    |
+| lazyloadSelector          |                                    |
+| touch                     |                                    |
+| mouseDrag                 | :heavy_check_mark:                                |
+| swipeAngle                |                                    |
+| preventActionWhenRunning  |                                    |
+| preventScrollOnTouch      |                                    |
+| nested                    |                                    |
+| freezable                 | :heavy_check_mark:                                |
+| disable                   | :heavy_check_mark:                                |
+| startIndex                | :heavy_check_mark:                                |
+| onInit                    |                                    |
+| useLocalStorage           |                                    |
+| nonce                     |                                    |
+
 
 Keep in mind that this is a very new package, and that I'm beginner in package development, especially Shiny widgets. All contributions are welcome!
 
