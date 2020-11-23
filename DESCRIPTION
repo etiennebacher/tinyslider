@@ -1,5 +1,5 @@
 Package: tinyslider
-Title: Provide Widgets for R Shiny
+Title: Adaptation For R Of The Javascript Library Tiny-Slider
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Etienne",
