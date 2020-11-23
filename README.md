@@ -1,11 +1,11 @@
-# tinyslider
+# tinyslider 
 
 [CAREFUL - WORK IN PROGRESS]
 
 `tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider). It doesn't have any Javascript dependencies so there shouldn't be conflicts with other htmlwidgets.
 
 * [Installation](#installation)
-* [tinyslider](#tinyslider)
+* [How to use](#how-to-use)
     * [Standalone widget](#standalone-widget)
     * [In Shiny](#in-shiny)
     * [Include other elements](#other-elements)
@@ -21,7 +21,7 @@ You can install this package with:
 devtools::install_github("etiennebacher/tinyslider")
 ```
 
-## tinyslider
+## How to use
 
 ### Standalone widget
 
@@ -51,6 +51,8 @@ tinyslider(
       )
     )
 ```
+
+*[top↑](#tinyslider)*
 
 ### In Shiny  
 
@@ -94,6 +96,8 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
+*[top↑](#tinyslider)*
+
 ### Include other elements
 
 You are not obliged to use the cards created with `tinyslider_card()`. You can include other elements, such as plots that you have created, with the function `plot_to_card()`. This function converts plots in images, which means that it is impossible to have interactive plots, created by `plotly` or `echarts4r` for instance.
@@ -135,6 +139,8 @@ server <- function(input, output, session) {
 
 shinyApp(ui, server)
 ```
+
+*[top↑](#tinyslider)*
 
 ### Options
 
@@ -193,6 +199,8 @@ shinyApp(ui, server)
 | onInit                    |                                    |
 | useLocalStorage           |                                    |
 | nonce                     |                                    |
+
+*[top↑](#tinyslider)*
 
 
 Keep in mind that this is a very new package, and that I'm beginner in package development, especially Shiny widgets. All contributions are welcome!
