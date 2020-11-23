@@ -187,11 +187,11 @@ shinyApp(ui, server)
 | responsive                |                                    |
 | lazyload                  |                                    |
 | lazyloadSelector          |                                    |
-| touch                     |                                    |
+| touch                     | Only for touch devices                                   |
 | mouseDrag                 | :heavy_check_mark:                                |
-| swipeAngle                |                                    |
+| swipeAngle                | Only for touch devices                                   |
 | preventActionWhenRunning  |                                    |
-| preventScrollOnTouch      |                                    |
+| preventScrollOnTouch      | Only for touch devices                                   |
 | nested                    |                                    |
 | freezable                 | :heavy_check_mark:                                |
 | disable                   | :heavy_check_mark:                                |
