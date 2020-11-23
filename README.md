@@ -144,6 +144,8 @@ shinyApp(ui, server)
 
 ### Options
 
+The list of options is available [here](https://github.com/ganlanyuan/tiny-slider#options). Note that `container` is automatically set to `'.my-slider'` in the package, so there is no need to change it. 
+
 |                           | **Works**                              |
 |---------------------------|------------------------------------|
 | mode                      | :heavy_check_mark:                                |
