@@ -182,7 +182,7 @@ shinyApp(ui, server)
 | animateNormal             |                                    |
 | animateDelay              |                                    |
 | loop                      | :heavy_check_mark:                                |
-| rewind                    | :heavy_multiplication_x:                                 |
+| rewind                    | :heavy_check_mark:                                |
 | autoHeight                | :heavy_check_mark:                                |
 | responsive                |                                    |
 | lazyload                  |                                    |
