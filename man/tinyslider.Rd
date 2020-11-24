@@ -4,20 +4,14 @@
 \alias{tinyslider}
 \title{Create a carousel with tinyslider}
 \usage{
-tinyslider(
-  ...,
-  options = list(),
-  width = NULL,
-  height = NULL,
-  elementId = NULL
-)
+tinyslider(..., options = list(), responsive_options = list())
 }
 \arguments{
-\item{...}{Items created with \code{tinyslider_card}}
+\item{...}{Items created with \code{tinyslider_card}, or plots embedded in \code{plot_to_card}.}
 
-\item{options}{List of options for the carousel}
+\item{options}{List of options for the carousel.}
 
-\item{id}{Id of the carousel}
+\item{responsive_options}{List of options that differ according to viewport size. See the examples.}
 }
 \description{
 Create a carousel with tinyslider
@@ -29,15 +23,6 @@ WARNING: the option "container" is automatically set in the function and therefo
 }
 \examples{
 \dontrun{
-library(shiny)
-library(tinyslider)
-
-ui <- fluidPage(
-  tinysliderOutput("test")
-)
-server <- function(input, output, session) {
-
-  output$test <- renderTinyslider({
     tinyslider(
       id = "test",
       tinyslider_card(
@@ -65,13 +50,8 @@ server <- function(input, output, session) {
         loop = TRUE,
         autoplay = TRUE,
         autoplayTimeout = 1000
-      ),
-      height = "2000px"
+      )
     )
-  })
-}
-
-shinyApp(ui, server, options = list(launch.browser = TRUE))
 }
 
 }

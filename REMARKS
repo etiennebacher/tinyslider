@@ -1,7 +1,0 @@
- - running the test app (whether the shiny app or the brackets one) will give a result. Copying-pasting the html of this result, and relaunching will not give the same result
-
-ex : redo this example https://www.cssscript.com/tiny-content-slider-with-pure-javascript/ (careful, there's a mistake on the js script at the end, '.slider' and not'.container')
-
-- the class of the slider MUST BE my-slider
-
-- the purpose of tinyslider-item class is to have exactly one item per page (remove this class and the other items overlap a bit on the sides)
