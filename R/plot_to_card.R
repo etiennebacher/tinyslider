@@ -3,6 +3,8 @@
 #' @param plot the name of a plot (works only for ggplots for now)
 #'
 #' @export
+#' @importFrom ggplot2 ggsave
+#' @importFrom base64enc base64encode
 plot_to_card <- function(plot){
 
   if (!("gg" %in% class(plot)))

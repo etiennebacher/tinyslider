@@ -1,11 +1,11 @@
 #' Create cards for the tinyslider carousel
 #'
-#' @param id Id of the card
 #' @param title Title of the card
 #' @param subtitle Subtitle of the card
 #' @param content Text of the card
 #' @param button_text Display some text inside a button placed at the bottom of the card. If `NULL`, the button is not created.
 #' @param image An image to place on top of the card.
+#' @param width Width of the card as a character, in px or in %.
 #'
 #' @details `tinyslider_card` and `tinyslider_card_2` are very similar. The only difference is in the layout of the card. The latter creates a card with two columns. If `image` is not `NULL`, `tinyslider_card` puts an image at the top of the card, and `tinyslider_card_2` puts an image in the left column.
 #'

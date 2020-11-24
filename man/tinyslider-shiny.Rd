@@ -40,27 +40,37 @@ server <- function(input, output, session) {
 
   output$test <- renderTinyslider({
     tinyslider(
-      id = "test",
       tinyslider_card(
-        id = "id1",
-        title = "A beautiful landscape",
-        subtitle = "Where is this?",
-        content = "Available events include: indexChanged, transitionStart, transitionEnd, newBreakpointStart, newBreakpointEnd, touchStart, touchMove, touchEnd, dragStart, dragMove and dragEnd.",
-        image = "https://c.pxhere.com/photos/27/7b/scotland_centralscotland_benmore_stobbinnein_crianlarich_scotspine_mountains_landscape-267332.jpg!d"
+        title = "First title",
+        subtitle = "First subtitle",
+        content = paste0("Lorem Ipsum is simply dummy text of the",
+        "printing and typesetting industry. Lorem Ipsum has been the",
+         "industry's standard dummy text ever since the 1500s, when",
+         "an unknown printer took a galley of type and scrambled",
+          "it to make a type specimen book."),
+        image = "https://placeimg.com/200/150/nature"
       ),
       tinyslider_card(
-        "id2",
-        "A city now",
-        "Same question",
+        "Second title",
+        "Second subtitle",
         "There is a button below",
         button_text = "See more",
-        image = "https://c.pxhere.com/photos/75/a5/granada_spain_city_urban_buildings_architecture_houses_homes-1122666.jpg!d"
+        image = "https://placeimg.com/200/150/nature/2"
       ),
       tinyslider_card(
-        "id3",
-        "bla bla",
+        "Third title",
         subtitle = NULL,
-        content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        content = paste0("Lorem Ipsum is simply dummy text of the",
+        "printing and typesetting industry. Lorem Ipsum has been",
+        "the industry's standard dummy text ever since the",
+        "1500s, when an unknown printer took a galley of type and",
+        "scrambled it to make a type specimen book. It has",
+        "survived not only five centuries, but also the leap into",
+        "electronic typesetting, remaining essentially unchanged.",
+        "It was popularised in the 1960s with the",
+        "release of Letraset sheets containing Lorem Ipsum passages,",
+        "and more recently with desktop publishing",
+        "software like Aldus PageMaker including versions of Lorem Ipsum.")
       ),
       options = list(
         loop = TRUE,

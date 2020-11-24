@@ -35,7 +35,7 @@ tinyslider_card_2(
 
 \item{image}{An image to place on top of the card.}
 
-\item{id}{Id of the card}
+\item{width}{Width of the card as a character, in px or in \%.}
 }
 \description{
 Create cards for the tinyslider carousel

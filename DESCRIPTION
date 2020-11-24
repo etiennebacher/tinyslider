@@ -7,13 +7,15 @@ Authors@R:
            role = c("aut", "cre"),
            email = "etienne.bacher@protonmail.com")
 Description: It provides for now only one widget in order to enhance Shiny apps.
-License: `use_mit_license()`
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     shiny,
-    htmlwidgets
+    htmlwidgets,
+    ggplot2,
+    base64enc
 Suggests: 
     testthat
