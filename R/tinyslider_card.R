@@ -59,7 +59,7 @@ tinyslider_card <- function(title = NULL, subtitle = NULL, content = NULL, butto
 #' @rdname tinyslider_cards
 #' @importFrom shiny tags
 #' @export
-tinyslider_card_2 <- function(id, title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
+tinyslider_card_2 <- function(title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {
 
 
   ### button
@@ -86,7 +86,6 @@ tinyslider_card_2 <- function(id, title = NULL, subtitle = NULL, content = NULL,
   mytag <- tags$div(
     class = 'tinyslider-item',
     tags$div(
-      id = id,
       class = 'card',
       tags$div(
         class = "card-row",

@@ -16,7 +16,6 @@ tinyslider_card(
 )
 
 tinyslider_card_2(
-  id,
   title = NULL,
   subtitle = NULL,
   content = NULL,
