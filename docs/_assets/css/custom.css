@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+img[alt=logo] {
+  width: 50%;
+}
+
+:root {
+  --cover-background-color: #fff;
+  --base-font-family: 'Montserrat', sans-serif;
+  --base-background-color: #d9f2e6;
+  --code-inline-background: #c6ecd9;
+  --code-theme-background: #c6ecd9;
+  --sidebar-toggle-background: #c6ecd9;
+	--copycode-background: #b3e6cc;
+	--copycode-color: #000;
+	--theme-color: #d9f2e6;
+	--cover-button-color: #000;
+	--cover-button-color--hover: #000;
+	--cover-button-primary-color: #000;
+	--sidebar-nav-link-color--active: #000;
+	--sidebar-toggle-icon-color--collapse: #000;
+}
+
+a {
+  color: #000;
+}
+
+#tinyslider {
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+.sidebar {
+  background-color: #d9f2e6;
+}
+
+.sidebar > h1 .app-name-link {
+  color: #000;
+}
