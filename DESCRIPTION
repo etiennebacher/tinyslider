@@ -6,7 +6,10 @@ Authors@R:
            family = "Bacher",
            role = c("aut", "cre"),
            email = "etienne.bacher@protonmail.com")
-Description: Provide carousels built with 'Tiny-Slider JavaScript' library. These carousels can be used in 'shiny' applications or interactive R Markdown documents.
+Description: Provide carousels built with 'Tiny-Slider JavaScript' 
+    library. These carousels can be used in 'shiny' applications 
+    or interactive R Markdown documents. The user can add HTML cards
+    and plots made with 'ggplot2' in the carousel.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
