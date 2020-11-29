@@ -5,7 +5,7 @@
 #' @param options List of options for the carousel.
 #' @param responsive_options List of options that differ according to viewport size. See the examples.
 #'
-#' @details Due to its length, I do not detail the list of options available. This list is avaible [here](https://github.com/ganlanyuan/tiny-slider#options).
+#' @details Due to its length, I do not detail the list of options available. This list is available [here](https://github.com/ganlanyuan/tiny-slider#options).
 #'
 #' WARNING: the option "container" is automatically set in the function and therefore should not be modified.
 #'
@@ -134,7 +134,7 @@ tinyslider <- function(elementId = NULL, ..., options = list(), responsive_optio
 #' Shiny bindings for tinyslider
 #'
 #' Output and render functions for using tinyslider within Shiny
-#' applications and interactive Rmd documents.
+#' applications and interactive Markdown documents.
 #'
 #' @param outputId output variable to read from
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},

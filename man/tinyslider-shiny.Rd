@@ -26,7 +26,7 @@ is useful if you want to save an expression in a variable.}
 }
 \description{
 Output and render functions for using tinyslider within Shiny
-applications and interactive Rmd documents.
+applications and interactive Markdown documents.
 }
 \examples{
 \dontrun{

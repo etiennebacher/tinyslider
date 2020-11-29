@@ -1,6 +1,6 @@
 #' Convert a plot to a card
 #'
-#' @param plot the name of a plot (works only for ggplots for now)
+#' @param plot the name of a plot (works only for plots with the class `gg` for now)
 #'
 #' @export
 #' @importFrom ggplot2 ggsave

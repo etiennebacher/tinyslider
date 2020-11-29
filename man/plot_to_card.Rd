@@ -7,7 +7,7 @@
 plot_to_card(plot)
 }
 \arguments{
-\item{plot}{the name of a plot (works only for ggplots for now)}
+\item{plot}{the name of a plot (works only for plots with the class \code{gg} for now)}
 }
 \description{
 Convert a plot to a card

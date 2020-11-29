@@ -24,7 +24,7 @@ tinyslider(
 Create a carousel with tinyslider
 }
 \details{
-Due to its length, I do not detail the list of options available. This list is avaible \href{https://github.com/ganlanyuan/tiny-slider#options}{here}.
+Due to its length, I do not detail the list of options available. This list is available \href{https://github.com/ganlanyuan/tiny-slider#options}{here}.
 
 WARNING: the option "container" is automatically set in the function and therefore should not be modified.
 }
