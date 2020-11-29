@@ -19,3 +19,5 @@ Imports:
     base64enc
 Suggests: 
     testthat
+URL: https://tinyslider.etiennebacher.com
+BugReports: https://github.com/etiennebacher/tinyslider/issues
