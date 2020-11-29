@@ -1,5 +1,6 @@
 #' Create a carousel with tinyslider
 #'
+#' @param elementId Id of the carousel
 #' @param ... Items created with `tinyslider_card`, or plots embedded in `plot_to_card`.
 #' @param options List of options for the carousel.
 #' @param responsive_options List of options that differ according to viewport size. See the examples.

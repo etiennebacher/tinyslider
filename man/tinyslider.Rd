@@ -12,6 +12,8 @@ tinyslider(
 )
 }
 \arguments{
+\item{elementId}{Id of the carousel}
+
 \item{...}{Items created with \code{tinyslider_card}, or plots embedded in \code{plot_to_card}.}
 
 \item{options}{List of options for the carousel.}
