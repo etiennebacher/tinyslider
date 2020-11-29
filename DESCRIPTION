@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Etienne",
            family = "Bacher",
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            email = "etienne.bacher@protonmail.com")
 Description: Provide carousels built with 'Tiny-Slider JavaScript' 
     library. These carousels can be used in 'shiny' applications 
