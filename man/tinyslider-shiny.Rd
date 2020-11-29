@@ -29,7 +29,7 @@ Output and render functions for using tinyslider within Shiny
 applications and interactive Markdown documents.
 }
 \examples{
-\dontrun{
+if (interactive()) {
 library(shiny)
 library(tinyslider)
 

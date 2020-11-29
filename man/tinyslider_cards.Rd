@@ -37,9 +37,16 @@ tinyslider_card_2(
 
 \item{width}{Width of the card as a character, in px or in \%.}
 }
+\value{
+A card in HTML code.
+}
 \description{
 Create cards for the tinyslider carousel
 }
 \details{
 \code{tinyslider_card} and \code{tinyslider_card_2} are very similar. The only difference is in the layout of the card. The latter creates a card with two columns. If \code{image} is not \code{NULL}, \code{tinyslider_card} puts an image at the top of the card, and \code{tinyslider_card_2} puts an image in the left column.
+}
+\examples{
+\dontrun{
+tinyslider_card("This is a title", "This is a subtitle")}
 }

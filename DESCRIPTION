@@ -1,12 +1,12 @@
 Package: tinyslider
-Title: Adaptation For R Of The Javascript Library Tiny-Slider
+Title: Adaptation for R of the JavaScript Library Tiny-Slider
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Etienne",
            family = "Bacher",
            role = c("aut", "cre"),
            email = "etienne.bacher@protonmail.com")
-Description: It provides for now only one widget in order to enhance Shiny apps.
+Description: It provides carousels build with tiny-slider.js. These carousels can be used in 'shiny' applications or interactive R Markdown documents.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

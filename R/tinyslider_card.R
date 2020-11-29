@@ -9,7 +9,13 @@
 #'
 #' @details `tinyslider_card` and `tinyslider_card_2` are very similar. The only difference is in the layout of the card. The latter creates a card with two columns. If `image` is not `NULL`, `tinyslider_card` puts an image at the top of the card, and `tinyslider_card_2` puts an image in the left column.
 #'
+#' @return A card in HTML code.
+#'
 #' @name tinyslider_cards
+#'
+#' @examples
+#' \dontrun{
+#' tinyslider_card("This is a title", "This is a subtitle")}
 #' @importFrom shiny tags
 #' @export
 tinyslider_card <- function(title = NULL, subtitle = NULL, content = NULL, button_text = NULL, image = NULL, width = NULL) {

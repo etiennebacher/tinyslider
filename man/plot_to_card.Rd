@@ -7,8 +7,21 @@
 plot_to_card(plot)
 }
 \arguments{
-\item{plot}{the name of a plot (works only for plots with the class \code{gg} for now)}
+\item{plot}{the name of a plot (works only for plots with the class \code{gg} for now).}
+}
+\value{
+A character vector containing the plot encoded in base64. Therefore, this function should only be used in \code{tinyslider()}.
 }
 \description{
 Convert a plot to a card
+}
+\examples{
+\dontrun{
+library(ggplot2)
+
+plot1 <- ggplot(mtcars, aes(hp, drat)) +
+  geom_point()
+
+tinyslider(plot_to_card(plot1))
+}
 }
