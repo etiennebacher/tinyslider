@@ -63,7 +63,7 @@
 #' @importFrom shiny tags
 #'
 #' @export
-tinyslider <- function(elementId = NULL, ..., options = list(), responsive_options = list()) {
+tinyslider <- function(..., options = list(), responsive_options = list(), elementId = NULL) {
 
     items <- list(...)
 

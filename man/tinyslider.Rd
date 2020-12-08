@@ -5,20 +5,20 @@
 \title{Create a carousel with tinyslider}
 \usage{
 tinyslider(
-  elementId = NULL,
   ...,
   options = list(),
-  responsive_options = list()
+  responsive_options = list(),
+  elementId = NULL
 )
 }
 \arguments{
-\item{elementId}{Id of the carousel}
-
 \item{...}{Items created with \code{tinyslider_card()}, or plots embedded in \code{plot_to_card}.}
 
 \item{options}{List of options for the carousel.}
 
 \item{responsive_options}{List of options that differ according to viewport size. See the examples.}
+
+\item{elementId}{Id of the carousel}
 }
 \value{
 An htmlwidget visible in RStudio viewer or in a web browser. This htmlwidget can be stored into an object (such as \code{x <- tinyslider()}.
