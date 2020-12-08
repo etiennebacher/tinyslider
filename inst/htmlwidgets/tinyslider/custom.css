@@ -76,3 +76,17 @@
 	 margin: 0;
 	 padding: 0 0.5rem;
 }
+
+.tns-nav button:not(.tns-nav-active) {
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+button.tns-nav-active {
+    background: #00008B;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
