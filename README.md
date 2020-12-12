@@ -1,5 +1,9 @@
 # tinyslider 
 
+<!-- badges: start -->
+  [![R build status](https://github.com/etiennebacher/shinymisc/workflows/R-CMD-check/badge.svg)](https://github.com/etiennebacher/shinymisc/actions)
+<!-- badges: end -->
+
 [CAREFUL - WORK IN PROGRESS]
 
 `tinyslider` is an R package that allows to create a carousel via the JavaScript library [tiny-slider](https://github.com/ganlanyuan/tiny-slider). It doesn't have any Javascript dependencies so there shouldn't be conflicts with other htmlwidgets.
